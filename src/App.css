@@ -1,0 +1,77 @@
+body {
+  background-image: linear-gradient(124deg, #c6f1ff 2%, #ffb2d7 29%, #9bc3d4 48%, #e39696 70%, #008bd5 99%);
+}
+
+.iframe-wrapper {
+  position: relative;
+  aspect-ratio: 16 / 9;
+
+}
+
+&::before {    
+  content: "";
+  position: absolute;
+  inset: -5px;
+  z-index: -1;
+  filter: blur(10px);
+  opacity: .75;
+}
+
+
+
+iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  clip-path: inset(0% 0% 0% 0% round 30px);
+}
+
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+/* @font-face {
+    font-family: nunito;
+    src: url(../public/NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf);
+}
+.nunito {
+  font-family: nunito;
+} */
+
+/* @font-face {
+  font-family: 'nunito'; 
+  src: url('../public/NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf');
+}
+
+.nunito {
+  font-family: 'nunito'; 
+} */
